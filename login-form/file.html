@@ -4,12 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
+    <link rel="stylesheet" href="file.css">
 </head>
 <body>
     <div class="loginform">
-        <h3>Login</h3>
-        <form action="#">
-
+        <h3>Sign Up</h3>
+        <form action="#" method="post">
+            <div class="input">
+                <label class="textlabel" for="uname">User name</label>
+                <input type="text" name="username" id="uname" placeholder="Username" required>
+            </div>
+            <div class="input">
+                <label class="textlabel" for="passwd">Password</label>
+                <input type="password" name="password" id="passwd" placeholder="password" required minlength="8">
+            </div>
+            <div class="input">
+                <label class="textlabel" for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="radio">
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">male</label>
+                <input type="radio" name="gender" id="female" value="male">
+                <label for="female">female</label>
+            </div>
+            <div class="btn">
+                <button type="submit">Login</button>
+                <button type="reset">Reset</button>
+            </div>
         </form>
     </div>
 </body>

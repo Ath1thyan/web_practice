@@ -1,0 +1,54 @@
+body{
+    background-image: url(../bgimg.jpeg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.loginform{
+    width: 500px;
+    background-color: rgba(0,0,0,.5);
+    margin: 250px auto;
+    border-radius: 8px;
+    color: aliceblue;
+    padding: 10px 20px 30px;
+    font-size: 30px;
+}
+.loginform h3{
+    color: #ee5240;
+    text-align: center;
+}
+.loginform .textlabel{
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+.input input{
+    font-size: 1.2em;
+    width: 100%;
+    border: 1px solid rgb(53, 132, 207);
+    border-radius: 8px;
+    box-shadow: 5px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    margin: 5px 0px 15px;
+}
+input:focus{
+    background-color: #b1c8f1;
+}
+.btn{
+    text-align: center;
+}
+button{
+    background-color: rgb(197, 94, 94);
+    font-size: 30px;
+    color: aliceblue;
+    margin-top: 20px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: 1px solid rgb(218, 58, 58);
+    box-shadow: 2px;
+}
+.radio input{
+    accent-color: rgb(197, 94, 94);
+    transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+}
