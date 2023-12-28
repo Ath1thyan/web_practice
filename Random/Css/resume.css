@@ -1,0 +1,17 @@
+body{
+    margin: 0%;
+    background-color: aliceblue;
+    font-family: sans-serif, Times;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.header{
+    font-size: 3rem;
+    color: #494848;
+    text-align: center;
+    font-weight: 500;
+}
+.mainpage{
+    display: flex;
+}
