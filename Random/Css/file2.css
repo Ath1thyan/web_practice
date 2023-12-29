@@ -1,3 +1,14 @@
-body{
+.imgbox{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
     
+}
+.imgbox img{
+    width: 1200px;
+    height: 1200px;
+    position: absolute;
+    right: -320px;
 }
