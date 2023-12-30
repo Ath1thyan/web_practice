@@ -1,25 +1,60 @@
 body{
-    margin: 0;
-    background-color: aliceblue;
+    background-color: rgb(42, 43, 43);
     font-family: 'Times New Roman', Times, sans-serif;
 }
 .card{
-    margin-top: 150px;
-    margin-left: 150px;
-    background-color: azure;
+    margin: 150px auto;
+    border-radius: 15px;
+    background-color: rgba(240,248,250,.5);
     width: 400px;
-    height: 500px;
+    padding: 10px 20px 30px;
 }
 .title{
     text-align: center;
-    padding-top: 10px;
+    color: #000;
 }
-.fields{
-    padding: 10px;
+.input{
+    font-size: 1.2em;
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgba(240,248,250,.5);
+    border: 1px solid rgb(42, 43, 43);
+    padding: 10px 10px;
+    box-sizing: border-box;
+    margin: 5px 0px 15px;
 }
-.mail{
-    padding: auto;
+.input:hover{
+    background-color: rgba(162, 175, 177, 0.7);
 }
+.input:focus{
+    background-color: rgba(162, 175, 177, 0.2);
+}
+.fa-eye{
+    position: absolute;
+    padding-top: 20px;
+    left: 880px;
+  }
 .btn{
-    
+    text-align: center;
+}
+button{
+    background-color: rgba(42, 43, 43, .3);
+    font-size: 25px;
+    color: #000;
+    border-radius: 15px;
+    border: 1px solid rgba(42, 43, 43, .3);
+    padding: 8px 12px;
+    margin-top: 20px;
+}
+button:hover{
+    background-color: rgba(156, 160, 160, 0.3);
+    font-size: 25px;
+    color: #000;
+    border-radius: 15px;
+    border: 1px solid rgba(42, 43, 43, .3);
+    padding: 10px 15px;
+    margin-top: 25px;
+}
+button:active{
+    background-color: rgba(62, 67, 235, 0.3);
 }
