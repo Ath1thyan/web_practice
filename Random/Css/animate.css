@@ -1,0 +1,11 @@
+.imgbox{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.imgbox img{
+    width: 500px;
+    height: 500px;
+    transform: scale(1.2);
+}

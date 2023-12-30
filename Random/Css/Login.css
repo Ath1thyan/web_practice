@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    background-color: aliceblue;
+    font-family: 'Times New Roman', Times, sans-serif;
+}
+.card{
+    margin-top: 150px;
+    margin-left: 150px;
+    background-color: azure;
+    width: 400px;
+    height: 500px;
+}
+.title{
+    text-align: center;
+    padding-top: 10px;
+}
+.fields{
+    padding: 10px;
+}
+.mail{
+    padding: auto;
+}
+.btn{
+    
+}
