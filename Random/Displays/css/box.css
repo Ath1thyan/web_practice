@@ -12,4 +12,9 @@ div p{
     border: 10px solid red;
     background-color: aliceblue;
     padding: 40px;
+    text-align: justify;
 }
+.ex1 {
+    direction: rtl;
+    unicode-bidi:bidi-override;
+  }
