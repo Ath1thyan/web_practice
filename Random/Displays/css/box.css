@@ -1,0 +1,15 @@
+body{
+    background-color: aquamarine;
+}
+div{
+    height: 400px;
+    width: 400px;
+    margin: 20vh auto;
+    /* background-color: rgb(10, 118, 213); */
+    /* display: block; */
+}
+div p{
+    border: 10px solid red;
+    background-color: aliceblue;
+    padding: 40px;
+}
