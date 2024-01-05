@@ -4,6 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox</title>
+    <style>
+        .container{
+            border: 5px solid red;
+            padding: 5px;
+            display: flex;
+            width: 400px;
+            flex-wrap: wrap;
+            /* justify-content: center; */
+            align-content: flex-start;
+        }
+        .box{
+            border: 5px solid blue;
+            margin: 10px;
+            padding: 30px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .box:nth-of-type(odd){
+            color: white;
+            background-color: teal;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
