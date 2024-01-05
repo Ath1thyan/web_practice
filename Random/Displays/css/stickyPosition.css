@@ -1,0 +1,31 @@
+body{
+    margin:0;
+    padding: 0;
+}
+.header, .footer{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100px;
+    font-weight: bold;
+    padding: 5px;
+}
+.navbar{
+    background-color: aqua;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+.navbar ul li{
+    display: inline-block;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    list-style: none;
+}
+.box{
+    background-color: aquamarine;
+    width: 100%;
+    padding: 10px;
+}
