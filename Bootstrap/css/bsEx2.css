@@ -1,0 +1,14 @@
+.container{
+    background-color: blue;
+    padding: 10px;
+    color: aliceblue;
+}
+.row{
+    background-color: aqua;
+    padding: 10px;
+}
+.col, .col-4, .col-8, .col-sm-8, .col-sm-4{
+    background-color: black;
+    padding: 20px;
+    border: 1px solid white;
+}
