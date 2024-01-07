@@ -1,0 +1,71 @@
+*{
+    font-family: 'Rubik', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    border: 5px solid black;
+    margin: 10px;
+}
+.grid-item{
+    padding: 16px;
+    text-align: center;
+    font-size: 18px;
+}
+.box1{
+    background-color: antiquewhite;
+}
+.box2{
+    background-color: rgb(244, 205, 153);
+}
+.box3{
+    background-color: rgb(149, 209, 132);
+}
+.box4{
+    background-color: rgb(118, 225, 236);
+}
+.box5{
+    background-color: rgb(243, 160, 112);
+}
+.box6{
+    background-color: rgb(232, 143, 182);
+}
+.box7{
+    background-color: rgb(189, 180, 240);
+}
+.box8{
+    background-color: rgb(188, 140, 161);
+}
+.box9{
+    background-color: rgb(232, 212, 213);
+}
+
+/* ----------Grid Properties----------- */
+
+.container{
+    /* display: inline-grid; */
+    display: grid;
+    /* grid-template-columns: 100px 200px 90px;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(3, 200px) 100px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(3, 200px);
+    height: 600px;
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    gap: 10px 20px;
+    gap: 20px;
+    justify-items: center;
+    align-items: center; 
+    grid-template: repeat(3, 200px) / repeat(3, 200px);
+    height: 800px;
+    justify-content: space-evenly;
+    align-content: space-evenly;*/
+
+    
+    /* grid-auto-flow: row;
+    grid-auto-rows: 100px;
+    grid-auto-flow: column;
+    grid-auto-columns: 100px; */
+}
