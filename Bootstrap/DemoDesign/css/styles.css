@@ -15,30 +15,38 @@ body{
     flex-shrink: 0;
 }
 .phone{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
     color: #FFF;
     font-family: Mulish;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 26px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 13px;
 }
-.phone-icon{
+.phone-num i{
     width: 24px;
     height: 24px;
     flex-shrink: 0;
+    text-align: center;
+}
+.mail{
+    align-content: start;
+}
+.mail i{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    text-align: center;
 }
 .topbar-right{
     background-color: black;
     width: 50vw;
     height: 50px;
     flex-shrink: 0;
-}
-.hero-section{
-    background-image: url(../Assets/map-image.jpeg);
-    width: 100vw;
-    height: 766px;
-    flex-shrink: 0;
-    opacity: 0.09;
 }
 .logo{
     color: var(--Style-1, #4691F2);
@@ -47,6 +55,8 @@ body{
     font-style: normal;
     font-weight: 700;
     line-height: 46px; 
+    margin-left: 245px;
+    margin-top: 78px;
 }
 .logo span{
     color: var(--Style-2, #1A1313);
@@ -60,4 +70,30 @@ body{
     width: 1110px;
     height: 52px;
     flex-shrink: 0;
+}
+.nav-links{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 155.556% */
+}
+.nav-links{
+    list-style-type: none;
+}
+.nav-links li{
+    display: inline;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #1A1313;
+}
+.blue{
+    color: #4691F2;
+}
+.hero-section{
+    background-image: url(../Assets/map-image.jpeg);
+    width: 100vw;
+    height: 766px;
+    flex-shrink: 0;
+    opacity: 0.09;
 }
