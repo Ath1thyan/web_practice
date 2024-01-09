@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+}
+.topbar{
+    color: white;
+    display: flex;
+}
+.topbar-left{
+    background-color: #4691F2;
+    width: 50vw;
+    height: 50px;
+    flex-shrink: 0;
+}
+.phone{
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+}
+.phone-icon{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+.topbar-right{
+    background-color: black;
+    width: 50vw;
+    height: 50px;
+    flex-shrink: 0;
+}
+.hero-section{
+    background-image: url(../Assets/map-image.jpeg);
+    width: 100vw;
+    height: 766px;
+    flex-shrink: 0;
+    opacity: 0.09;
+}
+.logo{
+    color: var(--Style-1, #4691F2);
+    font-family: Space Grotesk;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px; 
+}
+.logo span{
+    color: var(--Style-2, #1A1313);
+    font-family: Space Grotesk;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+}
+.navbar{
+    width: 1110px;
+    height: 52px;
+    flex-shrink: 0;
+}
