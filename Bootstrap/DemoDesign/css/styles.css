@@ -2,8 +2,6 @@ body{
     margin: 0;
     padding: 0;
 }
-.header{
-}
 .topbar{
     color: white;
     display: flex;
@@ -87,7 +85,7 @@ body{
     text-decoration: none;
     color: #1A1313;
 }
-.blue{
+li a:hover{
     color: #4691F2;
 }
 .hero-section{
