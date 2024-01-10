@@ -117,3 +117,40 @@ console.log(arr_keys)
 let arr_val = Object.values(cars)
 console.log(arr_val)
 
+
+let grp = [
+    ['Ravi', 'Sam', 'Ram'],
+    ['Kumar', 'Tiya', 'Sundar'],
+    ['Rajesh', 'Sara', 'Ragul']
+]
+for (let group of grp){
+    console.log(group)
+}
+
+for (let group of grp){
+    for (let g of group){
+        console.log(g)
+    }
+}
+
+console.log("starts with R : ")
+for (let group of grp){
+    for (let g of group){
+        if(g.startsWith('R')){
+            console.log(g)
+        }
+    }
+}
+
+console.log("print first only element starts with R : ")
+for (let group of grp){
+    label:
+    for (let g of group){
+        if(g.startsWith('R')){
+            console.log(g)
+            break label
+        }
+    }
+}
+
+
