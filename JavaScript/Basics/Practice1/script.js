@@ -202,5 +202,63 @@ console.log(func)
 console.log(func(user))
 
 
+const avg = 90
+const grade = avg >= 90 ? "A" : avg >= 80 ? "B" : "C"
+console.log("Grade : " + grade)
+const avg1 = 85
+const grade1 = avg1 >= 90 ? "A" : avg1 >= 80 ? "B" : "C"
+console.log("Grade : " + grade1)
+const avg2 = 50
+const grade2 = avg2 >= 90 ? "A" : avg2 >= 80 ? "B" : "C"
+console.log("Grade : " + grade2)
+
+
+// Bitwise operator
+const b1 = 2    // 10
+const b2 = 3    // 11
+console.log(b1 & b2)
+console.log(b1 | b2)
+console.log(~b1)    // ~a = -a-1  ==> ~b1 == -b-1 = -2-1 = -3
+console.log(b1 ^ b2)
+
+let b3 = 12
+let b4 = 24
+b3 &= b4    // stores the bitwise AND value of b3 & b4 in b3
+console.log(b3)
+
+let b5 = 5
+let b6 = 2
+console.log(b5 << b6)
+console.log(5 << 2)
+console.log(b5 >> b6)
+console.log(5 >> 2)
+b5 <<= b6
+console.log(b5)
+
+
+//  Nullish coalescing operator
+const e = null ?? 'No value'
+console.log(e)
+
+const e1 = null ?? 45
+console.log(e1)
+
+const users={'name' : 'Athi'}
+console.log(users)
+console.log(users.name)
+users.city ??= 'Coimbatore'
+console.log(users.city)
+console.log(users)
+
+
+let f = 5
+f++
+console.log(f)
+f--
+console.log(f)
+console.log(f++) // post increment
+console.log(++f) // pre increment
+console.log(f--) // post decrement
+console.log(--f) // pre decrement
 
 
