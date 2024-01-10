@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  } 
+
+
+  body{
+    background-color:grey;
+    align-items: center;
+    justify-content: center;
+    min-height: 800px;
+    min-width: 800px;
+    
+  }
+  .header{
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+  }
+  .header h1{
+    padding: 20px;
+    font-size: 2em;
+  }
+  .content{
+    height: 120px;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+   
+  }
+  .content p{
+    padding: 30px;
+    font-size: 1.7em;
+  }
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+
+  .container .card {
+    position: relative;
+    max-width: 300px;
+    background-color: #fff;
+    margin: 30px 25px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    height: 320px;
+    margin-top: 100px;
+    
+  }
+
+
+  .container .card .image {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -40%;
+    left: 1px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    /* border: 5px solid black; */
+    z-index: 1;
+    border-radius:50%;
+  }
+
+  .container .card .image img {
+    max-width: 100%;
+    display:flex;
+    border-radius: 50%;
+    max-height: 100%;
+    justify-content: center;
+    object-fit: contain;
+    
+  }
+
+  .container .card .content {
+    position: relative;
+    top: -100px;
+    padding: 10px ;
+    color: #111;
+    text-align: center;
+  }
+  .container .card .content p{
+    padding: 5px;
+  }

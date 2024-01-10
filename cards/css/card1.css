@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 200px;
+}
+.card{
+    border: 1px solid rgb(231, 223, 223);
+    border-radius: 20px;
+    /* margin: 200px auto; */
+    /* align-self: center; */
+    width: 300px;
+    height: 500px;
+    box-shadow: 0 0 10px 10px rgb(195, 195, 197);
+}
+.background{
+    background-color: rgb(120, 187, 204);
+    height: 150px;
+    width: auto;
+    border-radius: 20px 20px 0 0px;
+}
+.pic img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -100px;
+}
+.name{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+.title{
+    background-color: rgb(196, 219, 232);
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+    margin-left: 100px;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.skills{
+    text-align: center;
+    margin-top: 20px;
+    justify-content: center
+}
+.sk1, .sk2, .sk3, .sk4, .sk5{
+    padding: 10px;
+    border-color: 1px solid red;
+}
