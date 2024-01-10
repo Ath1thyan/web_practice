@@ -153,4 +153,52 @@ for (let group of grp){
     }
 }
 
+let str = "Athithyan Balaji"
+console.log(str.substring(4, 10))
+console.log(str.slice(4, 10))
+console.log(str.substring(4))
+console.log(str.slice(4))
+console.log(str.substring(0, 4))
+console.log(str.slice(0, 4))
+console.log(str.substring(4, 0))
+console.log(str.slice(4, 0))
+console.log(str.substring(40, 50))
+console.log(str.slice(40, 50))
+console.log(str.slice(-6))
+console.log(str.substring(-6))
+
+
+let str1 = "A quick brown fox jumps over the lazy dog"
+console.log(str1.split(" "))
+console.table(str1.split(" "))
+console.log(str1.replace("quick", "slow"))
+
+
+let arr4 = ['Athi', 'raj', 'sam', 'BMW']
+console.log(arr4.includes('raj'))
+console.log(arr4.includes('ram'))
+
+let v = "  Athi  "
+console.log(v.length)
+v = v.trim()
+console.log(v.length)
+
+v1 = "hi"
+v1=v1.padStart(4,0)
+console.log(v1)
+v1 = "hi"
+v1=v1.padStart(6,"$")
+console.log(v1)
+v1 = "hi"
+v1=v1.padStart(5," ")
+console.log(v1)
+v1 = "hi"
+v1=v1.padEnd(5,"I")
+console.log(v1)
+v1 = "hi"
+v1=v1.padEnd(5,4)
+console.log(v1)
+
+
+console.log(String.fromCharCode(65, 66, 67, 68, 97, 98, 122))
 
