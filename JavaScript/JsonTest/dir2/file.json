@@ -1,0 +1,15 @@
+{"data":[
+
+    {"photobg": "#ffcc00","title": "waterproof Mobile Phone","stars":"⭐⭐⭐⭐⭐", "properties":["12MP TrueDepth front camera", "Battery life: up to 22hours of video playback", "5G and Gigabit LTE"], "color": ["#000000","#00ff00","#0000ff"],"cost":"$20", "dcost":"$450"},
+  
+    {"photobg": "#ffcc00","title": "Smartphone Dual Camera","stars":"⭐⭐⭐⭐", "properties":["32MP TrueDepth front camera", "Battery life: up to 22hours of video playback", "5G and Gigabit LTE"], "color": ["#0000ff","#ff0000","#fff00"],"cost":"$20", "dcost":"$240"},
+    
+    {"photobg": "#ffcc00","title": "Black Colour Smartphone","stars":"⭐⭐⭐⭐⭐", "properties":["Face ID for Secure authentication", "LiDAR Scanner for Night mode", "5G and Gigabit LTE"], "color": ["#0000ff","#ff0000","#000000"],"cost":"$20", "dcost":"$450"}, 
+    
+    {"photobg": "#ffcc00","title": "Latest Smartphone Under 2000","stars":"⭐⭐⭐⭐", "properties":["20MP TrueDepth front camer", "LiDAR Scanner for Night mode", "Compatible with MagSafe accessories"], "color": ["#0000ff","#ff0000","#000000"],"cost":"$20", "dcost":"$450"},
+    
+    {"photobg": "#ffcc00","title": "New Phone Max pro","stars":"⭐⭐⭐⭐⭐", "properties":["2MagSafe and Qi wire charging", "A15 Bionic Chip with new 6-core CPU", "Compatible with MagSafe accessories"], "color": ["#0000ff","#ff0000","#000000"],"cost":"$20","dcost":"$390"},
+    
+    {"photobg": "#ffcc00","title": "Smart Phone pro +256","stars":"⭐⭐⭐⭐", "properties":["13.7cm (5.4 inch) Super Retina HDR and True Tone", "Battery life: up to 22hours of video playback", "Compatible with MagSafe accessories"], "color": ["#0000ff","#fff00","#0000ff"],"cost":"$20", "dcost":"$390"}
+  
+  ]}

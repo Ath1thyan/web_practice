@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.css"
+      integrity="sha256-NAxhqDvtY0l4xn+YVa6WjAcmd94NNfttjNsDmNatFVc="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin-top: 20px;
+        background-color: #f1f3f7;
+      }
+
+      .card {
+        margin-bottom: 24px;
+        -webkit-box-shadow: 0 2px 3px #e4e8f0;
+        box-shadow: 0 2px 3px #e4e8f0;
+      }
+
+      .card {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid #eff0f2;
+        border-radius: 1rem;
+      }
+
+      .font-size-18 {
+        font-size: 18px !important;
+      }
+
+      a {
+        text-decoration: none !important;
+      }
+
+      .text-muted {
+        --bs-text-opacity: 1;
+        color: #7f838b !important;
+      }
+
+      .font-size-20 {
+        font-size: 20px !important;
+      }
+
+      .font-size-15 {
+        font-size: 15px !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container" id="a"></div>
+
+    <script>
+      let json = {
+        data: [
+          {
+            photobg: "#ffcc00",
+            title: "waterproof Mobile Phone",
+            stars: "⭐⭐⭐⭐⭐",
+            properties: [
+              "12MP TrueDepth front camera",
+              "Battery life: up to 22hours of video playback",
+              "5G and Gigabit LTE",
+            ],
+            color: ["#000000", "#00ff00", "#0000ff"],
+            cost: "$20",
+            dcost: "$450",
+          },
+          {
+            photobg: "#ffff00",
+            title: "Smartphone Dual Camera",
+            stars: "⭐⭐⭐⭐",
+            properties: [
+              "32MP TrueDepth front camera",
+              "Battery life: up to 22hours of video playback",
+              "5G and Gigabit LTE",
+            ],
+            color: ["#0000ff", "#ff0000", "#fff00"],
+            cost: "$20",
+            dcost: "$240",
+          },
+
+          {
+            photobg: "aqua",
+            title: "Black Colour Smartphone",
+            stars: "⭐⭐⭐⭐⭐",
+            properties: [
+              "Face ID for Secure authentication",
+              "LiDAR Scanner for Night mode",
+              "5G and Gigabit LTE",
+            ],
+            color: ["#0000ff", "#ff0000", "#000000"],
+            cost: "$20",
+            dcost: "$450",
+          },
+
+          {
+            photobg: "red",
+            title: "Latest Smartphone Under 2000",
+            stars: "⭐⭐⭐⭐",
+            properties: [
+              "20MP TrueDepth front camer",
+              "LiDAR Scanner for Night mode",
+              "Compatible with MagSafe accessories",
+            ],
+            color: ["#0000ff", "#ff0000", "#000000"],
+            cost: "$20",
+            dcost: "$450",
+          },
+
+          {
+            photobg: "blue",
+            title: "New Phone Max pro",
+            stars: "⭐⭐⭐⭐⭐",
+            properties: [
+              "2MagSafe and Qi wire charging",
+              "A15 Bionic Chip with new 6-core CPU",
+              "Compatible with MagSafe accessories",
+            ],
+            color: ["#0000ff", "#ff0000", "#000000"],
+            cost: "$20",
+            dcost: "$390",
+          },
+
+          {
+            photobg: "red",
+            title: "Smart Phone pro +256",
+            stars: "⭐⭐⭐⭐",
+            properties: [
+              "13.7cm (5.4 inch) Super Retina HDR and True Tone",
+              "Battery life: up to 22hours of video playback",
+              "Compatible with MagSafe accessories",
+            ],
+            color: ["#0000ff", "#fff00", "#0000ff"],
+            cost: "$20",
+            dcost: "$390",
+          },
+        ],
+      };
+
+      let html = json.data
+        .map((elements) => {
+          return `<div class="card">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="table-responsive px-3">
+                            <table class="table table-striped align-middle table-nowrap">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="avatar-lg me-4">
+                                                <img src="https://www.bootdey.com/image/380x380/${elements.photobg}/000000"
+                                                    class="img-fluid rounded" alt="" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <h5 class="font-size-18"><a href="ecommerce-product-detail.html" class="text-dark">"${elements.title}"</a></h5>
+                                                <p class="text-muted mb-0 mt-2 pt-2">
+                                                    <i class="bx bxs-star text-warning"></i>
+                                                    <i class="bx bxs-star text-warning"></i>
+                                                    <i class="bx bxs-star text-warning"></i>
+                                                    <i class="bx bxs-star text-warning"></i>
+                                                    <i class="bx bxs-star-half text-warning"></i>
+                                                </p>
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <ul class="list-unstyled ps-0 mb-0">
+                                                <li><p class="text-muted mb-1 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> 12MP TrueDepth front camera </p></li>
+                                                <li><p class="text-muted mb-1 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Battery life: Up to 22 hours of video playback</p></li>
+                                                <li><p class="text-muted mb-0 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> 5G and Gigabit LTE</p></li>
+                                            </ul>
+                                        </td>
+
+                                        <td style="width: 180px;">
+                                            <p>Colors :</p>
+                                            <ul class="list-inline mb-0 text-muted product-color">
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-circle font-size-16 text-dark"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-circle font-size-16 text-success"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-circle font-size-16 text-primary"></i>
+                                                </li>
+                                            </ul>
+                                        </td>
+
+                                        <td style="width: 220px;">
+                                            <h3 class="mb-0 font-size-20"><span class="text-muted me-2"><del class="font-size-16 fw-normal">$500</del></span><b>$450</b></h3>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+        })
+        .join("");
+
+      document.getElementById("a").innerHTML = html;
+    </script>
+  </body>
+</html>
