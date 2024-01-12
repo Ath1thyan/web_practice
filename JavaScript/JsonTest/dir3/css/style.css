@@ -99,3 +99,60 @@
     left: 750px;
     margin-top: -150px;
 }
+.line{
+    width: 760px;
+    margin-left: 20px;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 10px;
+    padding-left: 20px;
+    
+}
+.pricebox{
+    /* position: relative; */
+    padding-left: 20px;
+    padding-right: 100px;
+}
+.oldprice{
+    /* position: absolute; */
+    opacity: .5;
+}
+.qbox{
+    padding-left: 150px;
+    padding-right: 100px;
+}
+.tot{
+    padding-left: 150px;
+    /* padding-right: 150px; */
+}
+
+.outbuttons{
+    background-color: rgb(213, 216, 216);
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    margin-left: 20px;
+}
+.cont{
+    margin-right: 250px;
+}
+.checkout{
+    color: white;
+    border: 1px solid green;
+    padding: 5px 10px;
+    background-color: rgb(34, 154, 34);
+    border-radius: 8px;
+    margin-left: 280px;
+    margin-top: -8px;
+}
+
+.footer{
+    background-color: rgb(213, 216, 216);
+    padding-bottom: 20px;
+    text-align: center;
+}
