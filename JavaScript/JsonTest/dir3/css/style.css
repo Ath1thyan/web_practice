@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.container{
+.container {
     display: flex;
     background-color: rgb(213, 216, 216);
     width: 100%;
@@ -14,7 +14,9 @@
     padding-left: 50px;
 }
 
-.card1, .card2, .card3{
+.card1,
+.card2,
+.card3 {
     background-color: rgb(255, 255, 255);
     margin: 10px;
     border: 0px solid white;
@@ -24,7 +26,7 @@
 }
 
 
-.bgcolor{
+.bgcolor {
     width: 150px;
     height: 150px;
     text-align: center;
@@ -33,7 +35,8 @@
     position: relative;
     border-radius: 8px;
 }
-.bgtxt{
+
+.bgtxt {
     margin: 0;
     position: absolute;
     top: 50%;
@@ -41,45 +44,58 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-.bgcolor1{
+
+.bgcolor1 {
     background-color: aqua;
 }
-.bgcolor2{
+
+.bgcolor2 {
     background-color: rgb(232, 176, 74);
 }
-.bgcolor3{
+
+.bgcolor3 {
     background-color: yellowgreen;
 }
 
 
-.profile{
+.profile {
     position: relative;
 }
-.title{
+
+.title {
     position: absolute;
     top: -140px;
     left: 180px;
     font-size: 1.2rem;
     font-weight: 300;
 }
-.rating{
+
+.rating {
     position: absolute;
     top: -96px;
     left: 180px;
 }
-.color{
+
+.color {
     position: absolute;
     top: -50px;
     left: 180px;
 }
 
-.delete-button{
-    position: absolute;
-    top: 40px;
-    left: 750px;
+.buttons {
+    position: relative;
 }
-.like-button{
+
+.delete-button {
     position: absolute;
-    top: 40px;
-    left: 800px;
+    top: 5px;
+    left: 700px;
+    margin-top: -150px;
+}
+
+.like-button {
+    position: absolute;
+    top: 5px;
+    left: 750px;
+    margin-top: -150px;
 }
