@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 .container{
     display: flex;
     background-color: rgb(213, 216, 216);
@@ -10,7 +11,9 @@
     padding-top: 10px;
     display: flex;
     flex-direction: column;
+    padding-left: 50px;
 }
+
 .card1, .card2, .card3{
     background-color: rgb(255, 255, 255);
     margin: 10px;
@@ -19,12 +22,16 @@
     margin-top: 10px;
     width: 800px;
 }
+
+
 .bgcolor{
     width: 150px;
     height: 150px;
     text-align: center;
     margin: 10px;
+    margin-top: 15px;
     position: relative;
+    border-radius: 8px;
 }
 .bgtxt{
     margin: 0;
@@ -42,4 +49,37 @@
 }
 .bgcolor3{
     background-color: yellowgreen;
+}
+
+
+.profile{
+    position: relative;
+}
+.title{
+    position: absolute;
+    top: -140px;
+    left: 180px;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.rating{
+    position: absolute;
+    top: -96px;
+    left: 180px;
+}
+.color{
+    position: absolute;
+    top: -50px;
+    left: 180px;
+}
+
+.delete-button{
+    position: absolute;
+    top: 40px;
+    left: 750px;
+}
+.like-button{
+    position: absolute;
+    top: 40px;
+    left: 800px;
 }
