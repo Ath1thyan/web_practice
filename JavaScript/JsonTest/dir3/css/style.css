@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    background-color: rgb(213, 216, 216);
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.card1, .card2, .card3{
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    border: 0px solid white;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 800px;
+}
+.bgcolor{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 10px;
+    position: relative;
+}
+.bgtxt{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.bgcolor1{
+    background-color: aqua;
+}
+.bgcolor2{
+    background-color: rgb(232, 176, 74);
+}
+.bgcolor3{
+    background-color: yellowgreen;
+}
