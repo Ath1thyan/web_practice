@@ -8,8 +8,8 @@
   </head>
 
   <body>
-    <div class="container" id="a">
-      <div class="c1">
+    <div class="container">
+      <div class="c1" id="a">
         <div class="card">
           <div class="top">
             <div class="bgcolor bgcolor1">
@@ -88,6 +88,7 @@
                 color: "Gray",
                 oldprice: "$550",
                 newprice: "$450",
+                total: "$900"
               },
 
               {
@@ -97,6 +98,7 @@
                 color: "Green",
                 oldprice: "$400",
                 newprice: "$350",
+                total: "$600"
               },
 
               {
@@ -106,14 +108,13 @@
                 color: "Blue",
                 oldprice: "$750",
                 newprice: "$650",
+                total: "$700"
               },
             ],
           };
           let html = "";
           json.data.forEach((items) => {
-            html += `<div class="container" id="a">
-                    <div class="c1">
-            <div class="card">
+            html += `
           <div class="top">
             <div class="bgcolor ${items.bgcolor}">
               <p class="bgtxt">380 X 380</p>
@@ -149,10 +150,10 @@
                 <p>Price</p>
               </div>
               <div class="oldprice">
-                <s>$500</s>
+                <s>${items.oldprice}</s>
               </div>
               <div class="newprice">
-                <p>$450</p>
+                <p>${items.newprice}</p>
               </div>
             </div>
             <div class="qbox">
@@ -174,13 +175,10 @@
                 <p>Total</p>
               </div>
               <div class="tot-price">
-                <p>$900</p>
+                <p>${items.total}</p>
               </div>
             </div>
-          </div>
-        </div>
-    </div>
-</div>`;
+          </div>`;
           });
           document.getElementById("a").innerHTML = html;
         </script>
