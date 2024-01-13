@@ -7,76 +7,185 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
-
   <body>
-    <div class="container">
-        <div class="c1">
-            <div class="card1">
-                <div class="top">
-                  <div class="bgcolor bgcolor1">
-                    <p class="bgtxt">380 X 380</p>
-                  </div>
-                  <div class="profile">
-                    <div class="title">
-                      <p>Waterproof Mobile Phone</p>
-                    </div>
-                    <div class="rating">
-                      <p>
-                        <span>⭐ &nbsp; </span><span>⭐ &nbsp; </span
-                        ><span>⭐ &nbsp; </span><span>⭐ &nbsp; </span>
-                      </p>
-                    </div>
-                    <div class="color">
-                      <p>Color : Gray</p>
-                    </div>
-                  </div>
-                  <div class="buttons">
-                    <div class="delete-button"><i class="fa-solid fa-trash" style="color: #000000;"></i></div>
-                    <div class="like-button"><i class="fa-solid fa-heart" style="color: #ea1026;"></i></div>
-                  </div>
-                </div>
-        
-                <hr class="line">
-        
-                <div class="bottom">
-                  <div class="pricebox">
-                    <div class="price">
-                      <p>Price</p>
-                    </div>
-                    <div class="oldprice">
-                      <s>$500</s>
-                    </div>
-                    <div class="newprice">
-                      <p>$450</p>
-                    </div>
-                  </div>
-                  <div class="qbox">
-                    <div class="quantity">
-                      <p>quantity</p>
-                    </div>
-                    <div class="dropdown-quantity">
-                      <select name="num" id="num">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="tot">
-                    <div class="total">
-                      <p>Total</p>
-                    </div>
-                    <div class="tot-price">
-                      <p>$900</p>
-                    </div>
-                  </div>
-                </div>
+    <div class="container" id="a">
+      <div class="c1">
+        <div class="card">
+          <div class="top">
+            <div class="bgcolor bgcolor1">
+              <p class="bgtxt">380 X 380</p>
+            </div>
+            <div class="profile">
+              <div class="title">
+                <p>Waterproof Mobile Phone</p>
               </div>
-        
-        
-              <div class="card2">
+              <div class="rating">
+                <p>
+                  <span>⭐ &nbsp; </span><span>⭐ &nbsp; </span
+                  ><span>⭐ &nbsp; </span><span>⭐ &nbsp; </span>
+                </p>
+              </div>
+              <div class="color">
+                <p>Color : Gray</p>
+              </div>
+            </div>
+            <div class="buttons">
+              <div class="delete-button">
+                <i class="fa-solid fa-trash" style="color: #000000"></i>
+              </div>
+              <div class="like-button">
+                <i class="fa-solid fa-heart" style="color: #ea1026"></i>
+              </div>
+            </div>
+          </div>
+
+          <hr class="line" />
+
+          <div class="bottom">
+            <div class="pricebox">
+              <div class="price">
+                <p>Price</p>
+              </div>
+              <div class="oldprice">
+                <s>$500</s>
+              </div>
+              <div class="newprice">
+                <p>$450</p>
+              </div>
+            </div>
+            <div class="qbox">
+              <div class="quantity">
+                <p>quantity</p>
+              </div>
+              <div class="dropdown-quantity">
+                <select name="num" id="num">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </div>
+            <div class="tot">
+              <div class="total">
+                <p>Total</p>
+              </div>
+              <div class="tot-price">
+                <p>$900</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          let json = {
+            data: [
+              {
+                bgcolor: "#ffcc00",
+                title: "waterproof Mobile Phone",
+                rating: "⭐ ⭐ ⭐ ⭐",
+                color: "Gray",
+                oldprice: "$550",
+                newprice: "$450",
+              },
+
+              {
+                bgcolor: "#ffcc00",
+                title: "Smartphone Dual Camera",
+                rating: "⭐ ⭐ ⭐ ⭐ ⭐",
+                color: "Green",
+                oldprice: "$400",
+                newprice: "$350",
+              },
+
+              {
+                bgcolor: "#ffcc00",
+                title: "Black Colour Smartphone",
+                rating: "⭐ ⭐ ⭐",
+                color: "Blue",
+                oldprice: "$750",
+                newprice: "$650",
+              },
+            ],
+          };
+          let html = "";
+          json.data.forEach((items) => {
+            html += `<div class="container" id="a">
+                    <div class="c1">
+            <div class="card">
+          <div class="top">
+            <div class="bgcolor ${items.bgcolor}">
+              <p class="bgtxt">380 X 380</p>
+            </div>
+            <div class="profile">
+              <div class="title">
+                <p>${items.title}</p>
+              </div>
+              <div class="rating">
+                <p>
+                  ${items.rating}
+                </p>
+              </div>
+              <div class="color">
+                <p>Color : ${items.color}</p>
+              </div>
+            </div>
+            <div class="buttons">
+              <div class="delete-button">
+                <i class="fa-solid fa-trash" style="color: #000000"></i>
+              </div>
+              <div class="like-button">
+                <i class="fa-solid fa-heart" style="color: #ea1026"></i>
+              </div>
+            </div>
+          </div>
+
+          <hr class="line" />
+
+          <div class="bottom">
+            <div class="pricebox">
+              <div class="price">
+                <p>Price</p>
+              </div>
+              <div class="oldprice">
+                <s>$500</s>
+              </div>
+              <div class="newprice">
+                <p>$450</p>
+              </div>
+            </div>
+            <div class="qbox">
+              <div class="quantity">
+                <p>quantity</p>
+              </div>
+              <div class="dropdown-quantity">
+                <select name="num" id="num">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </div>
+            <div class="tot">
+              <div class="total">
+                <p>Total</p>
+              </div>
+              <div class="tot-price">
+                <p>$900</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>`;
+          });
+          document.getElementById("a").innerHTML = html;
+        </script>
+
+        <!-- <div class="card2">
                 <div class="top">
                   <div class="bgcolor bgcolor2">
                     <p class="bgtxt">380 X 380</p>
@@ -202,98 +311,97 @@
                       <p>$900</p>
                     </div>
                   </div>
-                </div>
-              </div>
-        
-        
-              <div class="outbuttons">
-                <div class="cont">
-                    <p><<<&nbsp; Continue Shopping</p>
-                  </div>
-                  <div class="checkout">
-                    <p>checkout</p>
-                  </div>
-              </div>
+                </div> 
+              </div> -->
+
+        <div class="outbuttons">
+          <div class="cont">
+            <p><<<&nbsp; Continue Shopping</p>
+          </div>
+          <div class="checkout">
+            <p>checkout</p>
+          </div>
         </div>
+      </div>
 
-
-        <div class="c2">
-            <div class="order-summery">
-                <div class="head">
-                    <div class="head-left">
-                        <p>Order Summery</p>
-                    </div>
-                    <div class="head-right">
-                        <p>#MN0124</p>
-                    </div>
-                </div>
-
-                <hr class="line2">
-                
-                <div class="st">
-                    <div class="st-left">
-                        <p>Sub Total :</p>
-                    </div>
-                    <div class="st-right">
-                        <p>&nbsp; $ 780</p>
-                    </div>
-                </div>
-
-                <hr class="line3">
-
-                <div class="st">
-                    <div class="st-left">
-                        <p>Discount :</p>
-                    </div>
-                    <div class="st-right">
-                        <p>&nbsp; $ 780</p>
-                    </div>
-                </div>
-
-                <hr class="line3">
-
-                <div class="st">
-                    <div class="st-left">
-                        <p>Shipping :</p>
-                    </div>
-                    <div class="st-right">
-                        <p>&nbsp; $ 780</p>
-                    </div>
-                </div>
-
-                <hr class="line3">
-
-                <div class="st">
-                    <div class="st-left">
-                        <p>Estd. Tax :</p>
-                    </div>
-                    <div class="st-right">
-                        <p>&nbsp; $ 780</p>
-                    </div>
-                </div>
-
-                <hr class="line3">
-
-                <div class="tt">
-                    <div class="tt-left">
-                        <p>Total Amt:</p>
-                    </div>
-                    <div class="tt-right">
-                        <p>&nbsp;$ 780</p>
-                    </div>
-                </div>
-
-                <hr class="line3">
-
+      <div class="c2">
+        <div class="order-summery">
+          <div class="head">
+            <div class="head-left">
+              <p>Order Summery</p>
             </div>
+            <div class="head-right">
+              <p>#MN0124</p>
+            </div>
+          </div>
+
+          <hr class="line2" />
+
+          <div class="st">
+            <div class="st-left">
+              <p>Sub Total :</p>
+            </div>
+            <div class="st-right">
+              <p>&nbsp; $ 780</p>
+            </div>
+          </div>
+
+          <hr class="line3" />
+
+          <div class="st">
+            <div class="st-left">
+              <p>Discount :</p>
+            </div>
+            <div class="st-right">
+              <p>&nbsp; $ 780</p>
+            </div>
+          </div>
+
+          <hr class="line3" />
+
+          <div class="st">
+            <div class="st-left">
+              <p>Shipping :</p>
+            </div>
+            <div class="st-right">
+              <p>&nbsp; $ 780</p>
+            </div>
+          </div>
+
+          <hr class="line3" />
+
+          <div class="st">
+            <div class="st-left">
+              <p>Estd. Tax :</p>
+            </div>
+            <div class="st-right">
+              <p>&nbsp; $ 780</p>
+            </div>
+          </div>
+
+          <hr class="line3" />
+
+          <div class="tt">
+            <div class="tt-left">
+              <p>Total Amt:</p>
+            </div>
+            <div class="tt-right">
+              <p>&nbsp;$ 780</p>
+            </div>
+          </div>
+
+          <hr class="line3" />
         </div>
-      
+      </div>
     </div>
 
     <div class="footer">
-        <p>&copy; athithyan.me</p>
+      <p>&copy; athithyan.me</p>
     </div>
 
-    <script src="https://kit.fontawesome.com/acd31a11c2.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/acd31a11c2.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

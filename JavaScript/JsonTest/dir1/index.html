@@ -1,48 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JSON Cards</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
+  <body>
     <div class="header">
-        <h1>Our Advisors</h1>
+      <h1>Our Advisors</h1>
     </div>
 
     <div class="content">
-        <p>Mombo is a Html5 template based on Saas and Bottstrap 5 with mordern and creative multipurpose design you can
-            use it as a startups</p>
+      <p>
+        Mombo is a Html5 template based on Saas and Bottstrap 5 with mordern and
+        creative multipurpose design you can use it as a startups
+      </p>
     </div>
 
     <div class="container" id="a">
-
-        <div class="card">
-            <div class="image">
-                <img src="../../../../Resume/assets/3d-rendering-cartoon-boy.jpg" alt="#">
-            </div>
-            <div class="content">
-                <h2>Nancy</h2>
-                <p>Co-founder</p>
-            </div>
+      <div class="card">
+        <div class="image">
+          <img
+            src="../../../../Resume/assets/3d-rendering-cartoon-boy.jpg"
+            alt="#"
+          />
         </div>
+        <div class="content">
+          <h2>Nancy</h2>
+          <p>Co-founder</p>
+        </div>
+      </div>
 
-        <script>
-            let json = {
-                "data": [
-                    { "image": "../../../../Resume/assets/3d-rendering-cartoon-boy.jpg", "name": "nancy1", "position": "Co-founder" },
-                    { "image": "../../../../Resume/assets/3d-rendering-cartoon-boy.jpg", "name": "nancy2", "position": "Co-founder" },
-                    { "image": "../../../../Resume/assets/3d-rendering-cartoon-boy.jpg", "name": "nancy3", "position": "Co-founder" },
-                    { "image": "../../../../Resume/assets/3d-rendering-cartoon-boy.jpg", "name": "nancy4", "position": "Co-founder" }
-                ]
-            };
-            let html = "";
-            json.data.forEach(person => {
-                html += `<div class="card">
+      <script>
+        let json = {
+          data: [
+            {
+              image: "../../../../Resume/assets/3d-rendering-cartoon-boy.jpg",
+              name: "nancy1",
+              position: "Co-founder",
+            },
+            {
+              image: "../../../../Resume/assets/3d-rendering-cartoon-boy.jpg",
+              name: "nancy2",
+              position: "Co-founder",
+            },
+            {
+              image: "../../../../Resume/assets/3d-rendering-cartoon-boy.jpg",
+              name: "nancy3",
+              position: "Co-founder",
+            },
+            {
+              image: "../../../../Resume/assets/3d-rendering-cartoon-boy.jpg",
+              name: "nancy4",
+              position: "Co-founder",
+            },
+          ],
+        };
+        let html = "";
+        json.data.forEach((person) => {
+          html += `<div class="card">
                     <div class="image">
                         <img src="${person.image}" alt="#">
                     </div>
@@ -51,11 +69,11 @@
                         <p>${person.position}</p>
                     </div>
                 </div>`;
-            });
-            document.getElementById("a").innerHTML = html;
-        </script>
-        
-        <!-- <div class="card">
+        });
+        document.getElementById("a").innerHTML = html;
+      </script>
+
+      <!-- <div class="card">
             <div class="image">
                 <img src="../../../../Resume/assets/3d-rendering-cartoon-boy.jpg" alt="#">
             </div>
@@ -84,9 +102,6 @@
                 <p>Co-founder</p>
             </div>
         </div> -->
-
-
     </div>
-</body>
-
+  </body>
 </html>

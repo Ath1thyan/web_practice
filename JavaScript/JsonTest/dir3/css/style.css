@@ -23,9 +23,7 @@
     padding-left: 50px;
 }
 
-.card1,
-.card2,
-.card3 {
+.card {
     background-color: rgb(255, 255, 255);
     margin: 10px;
     border: 0px solid white;
