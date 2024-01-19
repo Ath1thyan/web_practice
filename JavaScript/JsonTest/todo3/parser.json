@@ -22,58 +22,64 @@
                 "title": "Analytics",
                 "num": "12files",
                 "time": "15min ago",
-                "ids": {
-                    "mem1": {
-                        "name": "Athi",
-                        "img": "img1"
-                    },
-                    "mem2": {
-                        "name": "Athi",
-                        "img": "img2"
-                    },
-                    "mem3": {
-                        "name": "Athi",
-                        "img": "img3"
+                "ids": [
+                    {
+                        "mem1": {
+                            "name": "Athi",
+                            "img": "img1"
+                        },
+                        "mem2": {
+                            "name": "Athi",
+                            "img": "img2"
+                        },
+                        "mem3": {
+                            "name": "Athi",
+                            "img": "img3"
+                        }
                     }
-                }
+                ]
             },
             {
                 "title": "Sketch Design",
                 "num": "235files",
                 "time": "23min ago",
-                "ids": {
-                    "mem1": {
-                        "name": "Athi",
-                        "img": "img1"
-                    },
-                    "mem2": {
-                        "name": "Athi",
-                        "img": "img2"
-                    },
-                    "mem3": {
-                        "name": "Athi",
-                        "img": "img3"
+                "ids": [
+                    {
+                        "mem1": {
+                            "name": "Athi",
+                            "img": "img1"
+                        },
+                        "mem2": {
+                            "name": "Athi",
+                            "img": "img2"
+                        },
+                        "mem3": {
+                            "name": "Athi",
+                            "img": "img3"
+                        }
                     }
-                }
+                ]
             },
             {
                 "title": "Applications",
                 "num": "20files",
                 "time": "45min ago",
-                "ids": {
-                    "mem1": {
-                        "name": "Athi",
-                        "img": "img1"
-                    },
-                    "mem2": {
-                        "name": "Athi",
-                        "img": "img2"
-                    },
-                    "mem3": {
-                        "name": "Athi",
-                        "img": "img3"
+                "ids": [
+                    {
+                        "mem1": {
+                            "name": "Athi",
+                            "img": "img1"
+                        },
+                        "mem2": {
+                            "name": "Athi",
+                            "img": "img2"
+                        },
+                        "mem3": {
+                            "name": "Athi",
+                            "img": "img3"
+                        }
                     }
-                }
+                ]
             }
         ],
         "recent": [
@@ -82,120 +88,132 @@
                 "name": "index.html",
                 "date": "12-10-2020,09:45",
                 "size": "09KB",
-                "ids": {
-                    "mem1": {
-                        "name": "Athi",
-                        "img": "img1"
-                    },
-                    "mem2": {
-                        "name": "Athi",
-                        "img": "img2"
-                    },
-                    "mem3": {
-                        "name": "Athi",
-                        "img": "img3"
+                "ids": [
+                    {
+                        "mem1": {
+                            "name": "Athi",
+                            "img": "img1"
+                        },
+                        "mem2": {
+                            "name": "Athi",
+                            "img": "img2"
+                        },
+                        "mem3": {
+                            "name": "Athi",
+                            "img": "img3"
+                        }
                     }
-                }
+                ]
             },
             {
                 "icon": "img2",
                 "name": "Project-A.zip",
                 "date": "12-10-2020,09:45",
                 "size": "09KB",
-                "ids": {
-                    "mem1": {
-                        "name": "Athi",
-                        "img": "img1"
-                    },
-                    "mem2": {
-                        "name": "Athi",
-                        "img": "img2"
-                    },
-                    "mem3": {
-                        "name": "Athi",
-                        "img": "img3"
+                "ids": [
+                    {
+                        "mem1": {
+                            "name": "Athi",
+                            "img": "img1"
+                        },
+                        "mem2": {
+                            "name": "Athi",
+                            "img": "img2"
+                        },
+                        "mem3": {
+                            "name": "Athi",
+                            "img": "img3"
+                        }
                     }
-                }
+                ]
             },
             {
                 "icon": "img3",
                 "name": "image-1.jpeg",
                 "date": "12-10-2020,09:45",
                 "size": "09KB",
-                "ids": {
-                    "mem1": {
-                        "name": "Athi",
-                        "img": "img1"
-                    },
-                    "mem2": {
-                        "name": "Athi",
-                        "img": "img2"
-                    },
-                    "mem3": {
-                        "name": "Athi",
-                        "img": "img3"
+                "ids": [
+                    {
+                        "mem1": {
+                            "name": "Athi",
+                            "img": "img1"
+                        },
+                        "mem2": {
+                            "name": "Athi",
+                            "img": "img2"
+                        },
+                        "mem3": {
+                            "name": "Athi",
+                            "img": "img3"
+                        }
                     }
-                }
+                ]
             },
             {
                 "icon": "img1",
                 "name": "uploadList.txt",
                 "date": "12-10-2020,09:45",
                 "size": "09KB",
-                "ids": {
-                    "mem1": {
-                        "name": "Athi",
-                        "img": "img1"
-                    },
-                    "mem2": {
-                        "name": "Athi",
-                        "img": "img2"
-                    },
-                    "mem3": {
-                        "name": "Athi",
-                        "img": "img3"
+                "ids": [
+                    {
+                        "mem1": {
+                            "name": "Athi",
+                            "img": "img1"
+                        },
+                        "mem2": {
+                            "name": "Athi",
+                            "img": "img2"
+                        },
+                        "mem3": {
+                            "name": "Athi",
+                            "img": "img3"
+                        }
                     }
-                }
+                ]
             },
             {
                 "icon": "img1",
                 "name": "Project B",
                 "date": "12-10-2020,09:45",
                 "size": "09KB",
-                "ids": {
-                    "mem1": {
-                        "name": "Athi",
-                        "img": "img1"
-                    },
-                    "mem2": {
-                        "name": "Athi",
-                        "img": "img2"
-                    },
-                    "mem3": {
-                        "name": "Athi",
-                        "img": "img3"
+                "ids": [
+                    {
+                        "mem1": {
+                            "name": "Athi",
+                            "img": "img1"
+                        },
+                        "mem2": {
+                            "name": "Athi",
+                            "img": "img2"
+                        },
+                        "mem3": {
+                            "name": "Athi",
+                            "img": "img3"
+                        }
                     }
-                }
+                ]
             },
             {
                 "icon": "img1",
                 "name": "changeList.txt",
                 "date": "12-10-2020,09:45",
                 "size": "09KB",
-                "ids": {
-                    "mem1": {
-                        "name": "Athi",
-                        "img": "img1"
-                    },
-                    "mem2": {
-                        "name": "Athi",
-                        "img": "img2"
-                    },
-                    "mem3": {
-                        "name": "Athi",
-                        "img": "img3"
+                "ids": [
+                    {
+                        "mem1": {
+                            "name": "Athi",
+                            "img": "img1"
+                        },
+                        "mem2": {
+                            "name": "Athi",
+                            "img": "img2"
+                        },
+                        "mem3": {
+                            "name": "Athi",
+                            "img": "img3"
+                        }
                     }
-                }
+                ]
             }
         ]
     }
