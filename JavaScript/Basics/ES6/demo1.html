@@ -7,6 +7,39 @@
 </head>
 <body>
     <script>
+        let s1 = `Hello`
+        let s2 = `World`
+        let s3 = `Program`
+        let s = s1 + ", " + s2 +", " + s3;
+        let str = (`${s1}, ${s2}, ${s3} : ${s3}`);
+        console.log(s);
+        console.log(str);
+
+        /* let a = 10;
+        let b = 5;
+        let c = 2; */
+
+        add = (a,b,c) => {
+            return a+b+c;
+        };
+
+        sub = (a,b,c) => {
+            return a-b-c;
+        };
+
+        mul = (a,b,c) => {
+            return a*b*c;
+        };
+
+        div = (a,b,c) => {
+            return (a/b)/c;
+        };
+
+        console.log("sum : " + add(1,2,3));
+        console.log(`difference : ` + sub(1,2,3));
+        console.log("Product : " + mul(1,2,3));
+        console.log("division : " + div(1,2,3));
+            
         
     </script>
 </body>
