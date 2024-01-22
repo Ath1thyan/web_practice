@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id = "add" >Add user</button>
+    <table style="border: 1px solid rgb(220, 217, 217); padding: 5px">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+            </tr>
+        </thead>
+        <tbody id="content">
+            <tr>
+                <td>name1</td>
+                <td>position1</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        let users = {
+            "profile" : [
+                {
+                    "name" : "Athi",
+                    "Position" : "Founder"
+                },
+                {
+                    "name" : "Athithyan",
+                    "Position" : "Developer"
+                },
+                {
+                    "name" : "name3",
+                    "Position" : "Developer"
+                }
+            ]
+        };
+
+        let html = "";
+
+        adduser = (...u) => {
+            for (let user of users.profile) {
+                html += `<tr>
+                            <td>${user.name}</td>
+                            <td>${user.Position}</td>
+                        </tr>`;
+            }
+        }
+
+        document.getElementById("content").addEventListener("add").innerHTML = html;
+    </script>
+</body>
+</html>
