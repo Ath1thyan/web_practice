@@ -35,13 +35,54 @@
             return (a/b)/c;
         };
 
+        console.log("\narrow functions")
+
         console.log("sum : " + add(1,2,3));
         console.log(`difference : ` + sub(1,2,3));
         console.log("Product : " + mul(1,2,3));
         console.log("division : " + div(1,2));
         console.log("division : " + div(10,2,2));
         console.log("division : " + div(10,7));
-            
+
+        console.log("\nSpread operator")
+        
+        add1 = (...hello) =>{
+            let sum = 0;
+            hello.forEach((nums)=>{
+                sum += nums;
+            });
+            return sum;
+        };
+        console.log(add1(1,2,3,4,5,6));
+
+
+        sub1 = (d) =>{
+            let subb = 0;
+            d.forEach((nums)=>{
+                subb -= nums;
+            });
+            return subb;
+        };
+        console.log(sub1([1,2,3,4,5,6]));
+
+
+        mul1 = (...m) => {
+            let pr = 1;
+            m.forEach((element) => {
+                if (Array.isArray(element)) {
+                    element.forEach((nestedElement) => {
+                        pr *= nestedElement;
+                    });
+                } else {
+                    pr *= element;
+                }
+            });
+            return pr;
+        };
+        console.log(mul1(1, 3, 2, [2, 4, 4]));
+
+        
+        
         
     </script>
 </body>
