@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <button id = "add" onclick="adduser()">Add user</button>
+    <button id="add" onclick="adduser()">Add user</button>
     <table style="border: 1px solid rgb(220, 217, 217); padding: 5px">
         <thead>
             <tr>
@@ -41,17 +41,15 @@
 
         let html = "";
 
-        
-        const ele = document.getElementById("#content");
-        function adduser(...u){
+        function adduser() {
             for (let user of users.profile) {
                 html += `<tr>
                             <td>${user.name}</td>
                             <td>${user.Position}</td>
                         </tr>`;
             }
+            document.getElementById("content").innerHTML = html;
         }
-        ele.innerHTML = html;
     </script>
 </body>
 </html>
