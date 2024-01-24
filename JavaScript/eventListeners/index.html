@@ -6,6 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <select name="" id="city">
+        <option value="bangalore">bangalore</option>
+        <option value="delhi">delhi</option>
+        <option value="mumbai">mumbai</option>
+        <option value="pune">pune</option>
+    </select>
+    <button type="submit">show stats</button>
+
+    <script>
+        const btn = document.querySelector('button')
+        btn.addEventListener('click', displaystats)
+        function displaystats(){
+            const inp = document.getElementById('city')
+            const cityyy = inp.options[inp.selectedIndex].value;
+            console.log(cityyy)
+        }
+    </script>
 </body>
 </html>
