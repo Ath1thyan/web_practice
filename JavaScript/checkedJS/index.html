@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checked</title>
+</head>
+<body>
+    <input type="checkbox" id="cbox">
+    <label for="cbox">Subscribe</label> <br>
+
+    <input type="radio" id="visabtn" name="card">
+    <label for="visabtn">Visa</label><br>
+
+    <input type="radio" id="mcbtn" name="card">
+    <label for="mcbtn">MasterCard</label><br>
+
+    <input type="radio" id="ppbtn" name="card">
+    <label for="ppbtn">Paypal</label> <br>
+
+    <button type="submit" id="subbtn">Submit</button>
+
+    <p id="subresult"></p>
+    <p id="cardresult"></p>
+    
+
+    <script>
+        const cbox = document.getElementById("cbox");
+        const visabtn = document.getElementById("visabtn");
+        const mcbtn = document.getElementById("mcbtn");
+        const ppbtn = document.getElementById("ppbtn");
+        const subbtn = document.getElementById("subbtn");
+        const subresult = document.getElementById("subresult");
+        const cardresult = document.getElementById("cardresult");
+
+        subbtn.onclick = function(){
+            
+            if (cbox.checked){
+                subresult.textContent = "subscribed";
+            }
+            else{
+                subresult.innerHTML = "not subscribed";
+            }
+
+            if (visabtn.checked){
+                cardresult.textContent = "Visa";
+            }
+            else if (mcbtn.checked){
+                cardresult.textContent = "MasterCard";
+            }
+            else if (ppbtn.checked){
+                cardresult.textContent = "Paypal";
+            }
+            else{
+                cardresult.textContent = "No cards selected";
+            }
+        }
+
+    </script>
+</body>
+</html>
