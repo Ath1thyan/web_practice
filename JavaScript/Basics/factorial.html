@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="fact"></p>
+
+    <script>
+        const fact = document.getElementById('fact');
+
+        const factfun = (num) => {
+        /*    let factorial = 1;
+            for (let i = num; i > 0; i--) {
+                factorial *= i; 
+            }`*/ 
+            if (num == 1)
+                return 1;
+
+            return num * factfun(num-1);
+        }
+        fact.innerHTML = factfun(3);
+    </script>
+</body>
+</html>
