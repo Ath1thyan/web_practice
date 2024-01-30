@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        
+      let usd = [5, 10, 20, 30];
+      let inr = usd.map((x) => x * 83);
+      console.log(inr);
+
+      inr2 = usd.map(convert);
+      function convert(val) {
+        return val * 83;
+      }
+      console.log(inr2);
+
+      const inp = [
+        { name: "Athi", position: "Founder" },
+        { name: "name1", position: "CTO" },
+        { name: "name3", position: "Senior Executive" },
+      ];
+      const positions = inp.map(x => x.position)
+      console.log(positions);
+
+      <!-- filter -->
+      const cost = [50,150,148,,789,15,45,89,88,367,145];
+      const filtered = cost.filter(x => x<100)
+      console.log(filtered);
+
+      // reduce
+
+      const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      const sum = arr.reduce((a, b) => a + b);
+      console.log(sum);
+
+
+
+
     </script>
-</body>
+  </body>
 </html>
