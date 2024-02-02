@@ -11,9 +11,26 @@
             constructor(name){
                 this.brand = name;
             }
+            present(){
+                return "I own a car from " + this.brand;
+            }
+        }
+
+        class Model extends Car{
+            constructor(name, model){
+                super(name);
+                this.model = model;
+            }
+
+            show(){
+                return this.present() + ' and the model is ' + this.model;
+            }
         }
         obj = new Car("Volvo");
-        console.log(obj)
+        console.log(obj.present())
+
+        obj2 = new Model("Volvo", "XC90");
+        console.log(obj2.show())
     </script>
 </body>
 </html>
