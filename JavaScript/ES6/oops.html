@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        class Users{
+            static numOfUsers = 0;
+
+            constructor(name, age){
+                this.name = name;
+                this.age = age;
+                Users.numOfUsers++;
+            }
+            login(){
+                console.log(this.name, ' loggedin');
+            }
+            logout(){
+                console.log(this.name,'loggedout');
+            }
+            static totalUsers(){
+                console.log("Total users ", Users.numOfUsers++);
+            }
+        }
+        let user1 = new Users("Athi", 22);
+        user1.login();
+        let user2 = new Users("Athithya", 22);
+        user2.login();
+
+        user1.logout();
+        user2.logout();
+
+        console.log("Total num os users => ",Users.numOfUsers);
+        Users.totalUsers();
+
+        // inheritance
+
+        class PaidUsers extends Users{
+            constructor(name, age){
+                super(name, age);
+                this.storage = 100;
+            }
+            msg(){
+                console.log("Successfully");
+            }
+            login(){
+                console.log(this.name,'loggedin as Paid user');
+                return this;
+            }
+        }
+        
+        let paidUser1 = new PaidUsers("Athithyan", 22);
+        paidUser1.login().msg();
+    </script>
+</body>
+</html>
