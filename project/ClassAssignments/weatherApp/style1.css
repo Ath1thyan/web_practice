@@ -1,0 +1,126 @@
+body{
+    background-color: black;
+    color: aliceblue;
+}
+.desktop{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.header{
+    width: 100vw;
+    height: 100px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.logo-icon{
+    font-size: 3rem;
+    padding-right: 20px;
+}
+.logo-title{
+    font-size: 3rem;
+    padding-right: 20px;
+    color: rgb(173, 54, 203);
+    padding-top: 10px;
+}
+.time-now{
+    font-size: 2rem;
+    padding-left: 250px;
+    color: rgb(250, 249, 251);
+    padding-top: 18px;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.8rem;
+}
+.links-1{
+    color: rgb(250, 249, 251);
+    text-decoration: none;
+    padding: 10px;
+}
+.links-1:hover{
+    cursor: pointer;
+    color: rgb(173, 54, 203);
+    text-decoration: underline;
+}
+
+.action-page{
+    width: 100vw;
+    height: 150px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+}
+.converter{
+    display: flex;
+    align-items: center;
+    padding-left: 300px;
+    padding-right: 100px;
+}
+.toggle-button{
+    border: 2px solid rgb(51.47, 224.19, 23.35);
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 20px;
+    width: 50px;
+    background: linear-gradient(180deg, rgb(51.47, 224.19, 23.35) 0%, rgba(148.71, 241.19, 133.66, 0) 100%);
+}
+.toggler{
+    background-color: #181515;
+    border-radius: 12.5px;
+    position: relative;
+    width: 20px;
+    height: 20px 
+}
+.c-val{
+    font-size: 1.5rem;
+    padding:  10px;
+}
+.search{
+    margin-top: 10px;
+    margin-left: 200px;
+    display: flex;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+    height: 30px;
+    width: 400px;
+}
+.search-icon{
+    font-size: 2rem;
+    padding-left: 10px;
+}
+.search-input{
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 30px;
+    height: 25px;
+    width: 250px;
+}
+.search-btn{
+    color: rgba(255,255,255,0.7);
+    background-color: rgba(173, 54, 203, 0.6);
+    padding: 5px;
+    border-radius: 10px;
+    width: 50px;
+}
+.search-btn:hover{
+    cursor: pointer;
+    color: rgb(255,255,255);
+    background-color: rgb(173, 54, 203);
+    padding: 5px;
+    border-radius: 10px;
+    width: 50px;
+}

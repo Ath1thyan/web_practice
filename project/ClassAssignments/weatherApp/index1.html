@@ -4,30 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
     <div class="desktop">
         <div class="header">
             <div class="left">
                 <div class="logo-icon"><i class="fa-brands fa-skyatlas" style="color: #ffffff;"></i></div>
-                <div class="logo-title">WeatherMe</div>
-                <div class="time-now">21:00</div>
+                <div class="logo-title">Weather Me</div>
+                <div class="time-now">21:00:00</div>
             </div>
             <div class="right">
-                <div class="today">Today</div>
-                <div class="tomorrow">Tomorrow</div>
-                <div class="monthly-forecast">Monthly-forecast</div>
+                <div class="today links-1">Today</div>
+                <div class="tomorrow links-1">Tomorrow</div>
+                <div class="monthly-forecast links-1">Monthly-forecast</div>
             </div>
         </div>
         <div class="action-page">
             <div class="converter">
-                <div class="cel">&deg;C</div>
-                <div class="toggle-button"></div>
-                <div class="farhen">&deg;F</div>
+                <div class="cel c-val">&deg;C</div>
+                <div class="toggle-button">
+                    <div class="toggler"></div>
+                </div>
+                <div class="farhen c-val">&deg;F</div>
             </div>
             <div class="search">
-                <div class="search-icon"><i class="fa-brands fa-searchengin fa-sm" style="color: #211f1f;"></i></div>
-                <div class="search-input">Search locations...</div>
+                <div class="search-icon"><i class="fa-brands fa-searchengin fa-sm" style="color: #fff;"></i></div>
+                <input class="search-input"  type="text" placeholder="Search city..."/>
+                <div class="search-btn">Search</div>
             </div>
         </div>
         <div class="weather-page">
@@ -57,13 +61,13 @@
                     <div class="wind-value climate-value">2mph</div>
                 </div>
             </div>
-            <div class="left-arrow"><i class="fa-solid fa-less-than" style="color: #ffffff;"></i></div>
-            <div class="right-arrow"><i class="fa-solid fa-greater-than" style="color: #ffffff;"></i></div>
+            <div class="left-arrow"><i class="fa-solid fa-caret-left" style="color: #ffffff;"></i></div>
+            <div class="right-arrow"><i class="fa-solid fa-caret-right" style="color: #ffffff;"></i></div>
         </div>
         <div class="hourly-forecast">
             <div class="hourly-card">
                 <div class="time">21:00</div>
-                <div class="weather-icon"><i class="fa-solid fa-sun-haze" style="color: #ffffff;"></i></div>
+                <div class="weather-icon"><i class="fa-solid fa-sun" style="color: #ffffff;"></i></div>
                 <div class="weather-value">28</div>
                 <div class="cel-far">&deg;C</div>
             </div>
