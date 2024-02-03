@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: #2b2a2a;
     color: aliceblue;
 }
 .desktop{
@@ -11,7 +11,7 @@ body{
 .header{
     width: 100vw;
     height: 100px;
-    background-color: #000000;
+    background-color: #2b2a2a;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -28,7 +28,7 @@ body{
 .logo-title{
     font-size: 3rem;
     padding-right: 20px;
-    color: rgb(173, 54, 203);
+    color: rgb(191, 65, 222);
     padding-top: 10px;
 }
 .time-now{
@@ -51,14 +51,14 @@ body{
 }
 .links-1:hover{
     cursor: pointer;
-    color: rgb(173, 54, 203);
+    color: rgb(191, 65, 222);
     text-decoration: underline;
 }
 
 .action-page{
     width: 100vw;
     height: 150px;
-    background-color: #000000;
+    background-color: #2b2a2a;
     display: flex;
     align-items: center;
 }
@@ -69,7 +69,7 @@ body{
     padding-right: 100px;
 }
 .toggle-button{
-    border: 2px solid rgb(51.47, 224.19, 23.35);
+    border: 1px solid rgb(51.47, 224.19, 23.35);
     border-radius: 10px;
     margin-left: 10px;
     margin-right: 10px;
@@ -88,6 +88,7 @@ body{
     font-size: 1.5rem;
     padding:  10px;
 }
+
 .search{
     margin-top: 10px;
     margin-left: 200px;
@@ -111,7 +112,7 @@ body{
 }
 .search-btn{
     color: rgba(255,255,255,0.7);
-    background-color: rgba(173, 54, 203, 0.6);
+    background-color: rgba(191, 65, 222, 0.6);
     padding: 5px;
     border-radius: 10px;
     width: 50px;
@@ -119,8 +120,42 @@ body{
 .search-btn:hover{
     cursor: pointer;
     color: rgb(255,255,255);
-    background-color: rgb(173, 54, 203);
+    background-color: rgb(191, 65, 222);
     padding: 5px;
     border-radius: 10px;
     width: 50px;
+}
+
+.weather-page{
+    width: 100vw;
+    height: 600px;
+    background-color: #2b2a2a;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: left;
+}
+.main-card{
+    border: 0px solid rgb(191, 65, 222);
+    border-radius: 30px;
+    width: 40%;
+    height: 400px;
+    padding: 20px;
+    background-image: linear-gradient(rgb(191, 65, 222),rgb(82, 44, 92) , black);
+}
+
+.place{
+    display: flex;
+    align-items: self-start;
+    justify-content: flex-start;
+    padding-top: 10px;
+}
+.location-icon{
+    font-size: 1.5rem;
+    padding-right: 10px;
+}
+.location{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    padding-top: -2px;
 }
