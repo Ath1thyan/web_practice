@@ -40,8 +40,9 @@
             </div>
             <div class="search">
                 <div class="search-icon"><i class="fa-brands fa-searchengin fa-sm" style="color: #fff;"></i></div>
-                <input class="search-input"  type="text" placeholder="Search city..."/>
-                <div class="search-btn">Search</div>
+                <input class="search-input"  type="text" id="location-input" placeholder="Search city..."/>
+                <ul id="search-dropdown" class="search-suggestions"></ul>
+                <div class="search-btn" onclick="search()">Search</div>
             </div>
         </div>
         <div class="weather-page">
