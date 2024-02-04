@@ -87,10 +87,14 @@ let reachC = new Promise((resolve, reject) => {
     }
 })
 
-Promise.all([reachA, reachB, reachC])
-.then((message) => console.log(message))
-.catch((error) => console.log(error))
+// Promise.all([reachA, reachB, reachC])
+// .then((message) => console.log(message))
+// .catch((error) => console.log(error))
 
-Promise.allSettled([reachA, reachB, reachC])
+// Promise.allSettled([reachA, reachB, reachC])
+// .then((message) => console.log(message))
+// .catch((error) => console.log(error))
+
+Promise.any([reachA, reachB, reachC])
 .then((message) => console.log(message))
 .catch((error) => console.log(error))

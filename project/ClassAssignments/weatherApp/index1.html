@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png" type="image/x-icon">
     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
@@ -147,11 +148,11 @@
             document.getElementById('seconds').innerHTML = sec
         }
 
-function padZero(num){
-    return num<10?"0"+num:num
-}
+        function padZero(num){
+            return num<10?"0"+num:num
+        }
 
-setInterval(displayTime,500)
+        setInterval(displayTime,500);
     </script>
 </body>
 </html>
