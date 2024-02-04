@@ -59,6 +59,26 @@
         
         let paidUser1 = new PaidUsers("Athithyan", 22);
         paidUser1.login().msg();
+
+
+        // get and set
+        class Temperature{
+            constructor(temp){
+                this._temp = temp;
+            }
+            get temp(){
+                return this._temp;
+                return `${this._temp} deg celcius`
+            }
+            set temp(temp){
+                if(temp>100)
+                temp = 100
+                this._temp = temp
+            }
+        }
+        let temp1 = new Temperature(30);
+        temp1.temp = 150
+        console.log(temp1.temp);
     </script>
 </body>
 </html>
