@@ -283,7 +283,7 @@ body{
     opacity: 0.15;
     color: #dddbdb;
 }
-.weather-value{
+.weather1-value{
     text-align: center;
     font-size: 2.5rem;
 }
@@ -303,3 +303,4 @@ body{
 .copy-right{
     font-size: 1.2rem;
 }
+
