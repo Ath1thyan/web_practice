@@ -11,7 +11,6 @@ body{
 .header{
     width: 100vw;
     height: 100px;
-    background-color: #2b2a2a;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -141,7 +140,7 @@ body{
     width: 40%;
     height: 400px;
     padding: 20px;
-    background-image: linear-gradient(rgb(191, 65, 222),rgb(82, 44, 92) , black);
+    background-image: linear-gradient(rgb(191, 65, 222),rgb(71, 41, 79) , rgb(27, 27, 27));
 }
 
 .place{
@@ -158,4 +157,149 @@ body{
     font-size: 1.5rem;
     color: rgb(255, 255, 255);
     padding-top: -2px;
+}
+
+.weather{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 5rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: normal;
+    text-transform: none;
+    color: #fff;
+}
+.weather-icon{
+    font-size: 5rem;
+    padding-right: 20px;
+    margin-left: -20px;
+}
+.weather-value{
+    padding-right: 20px;
+    padding-left: 30px;
+}
+.cel{
+    color: #edeaea;
+}
+
+.date-day{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: normal;
+    text-transform: none;
+    color: #edeaea;
+}
+.date{
+    padding-right: 20px;
+}
+.day{
+    padding-left: 20px;
+}
+
+.climate-report{
+    margin-top: 40px;
+}
+.climate-report-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: normal;
+    text-transform: none;
+    color: #edeaea;
+}
+.climate-report-value{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: normal;
+    text-transform: none;
+    color: #edeaea;
+}
+.visibility-value{
+    padding-left: 20px;
+}
+
+.arrow{
+    font-size: 4.2rem;
+    color: rgba(255,255,255,0.7);
+}
+.arrow:hover{
+    font-size: 5rem;
+    color: rgb(255,255,255);
+}
+
+.hourly-forecast{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+.hourly-card{
+    border: 0px solid rgb(191, 65, 222);
+    border-radius: 30px;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    background-image: linear-gradient(rgb(27, 27, 27), rgb(71, 41, 79),  rgb(191, 65, 222));
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.time{
+    font-size: 1.5rem;
+}
+.forecast-icon{
+    position: absolute;
+    font-size: 5rem;
+    opacity: 0.15;
+    color: #dddbdb;
+}
+.weather-value{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.cel-far{
+    font-size: 1.5rem;
+    color: #edeaea;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+}
+.copy-right{
+    font-size: 1.2rem;
 }
