@@ -319,13 +319,20 @@ body{
     font-size: 1.2rem;
 }
 
-
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
 ul li {
     list-style-type: none;
     padding: 10px;
     cursor: pointer;
     background: #4e4e4e;
     color: white;
+    position: relative;
 }
 ul li:hover {
     background-color: #b15aa7;

@@ -1,6 +1,7 @@
 
 
-const locationInput = document.getElementById('location-input')
+const locationInput = document.getElementById('location-input');
+const dropdown = document.getElementById('location-dropdown');
 let data;
 
 
@@ -8,21 +9,133 @@ async function search(place) {
     const geoNameApi = `http://api.geonames.org/postalCodeSearchJSON?placename_startsWith=${place}&maxRows=10&username=arun&country=IN`
     
     
-    try{
-        const placeResult = await fetch(geoNameApi);
-        data = await placeResult.json();
+    try {
+        const res = await fetch(geoNameApi);
+        data = await res.json();
 
-    }
-    
-    catch(error){
-        console.log("An error occured", error);
-    };
-    
-    let results = data.geonames[0]; 
-    console.log(results);
+        dropdown.innerHTML = '';
 
-    if (!results) {
-        alert("No Place Found");
-        return;
+        if (data.postalCodes) {
+            data.postalCodes.forEach((postalCode) => {
+                const listItem = document.createElement('li');
+                listItem.textContent = postalCode.placeName;
+                listItem.addEventListener('click', function () {
+                    locationInput.value = postalCode.placeName;
+                    clearAutocomplete();
+                    SelectFromOptions(postalCode);
+                });
+                dropdown.appendChild(listItem);
+            });
+        }
+
+    } catch (error) {
+        console.log('Error in autocomplete: ' + error);
     }
 }
+
+function clearAutocomplete() {
+    dropdown.innerHTML = '';
+    locationInput.value = '';
+}
+
+function SelectFromOptions(postalCode) {
+    console.log('SelectFromOptions function has been invoked');
+    const str = JSON.stringify(postalCode);
+    console.log('The single object: ' + str);
+    console.log(postalCode.lat);
+    console.log(postalCode.lng);
+    getWeatherDetails(postalCode.lat, postalCode.lng)
+    const name = document.getElementById("location");
+    name.innerHTML = postalCode.placeName;
+}
+
+let selectedIndex = -1;
+input.addEventListener('keydown', function (e) {
+    const dropdownItems = document.querySelectorAll('#location-dropdown li');
+
+    if (e.key === 'ArrowDown' && selectedIndex <= dropdownItems.length - 1) {
+        selectedIndex++;
+    } else if (e.key === 'ArrowUp' && selectedIndex > 0) {
+        selectedIndex--;
+    }
+
+    // Highlight the selected item
+    dropdownItems.forEach((item, index) => {
+        item.classList.toggle('selected', index === selectedIndex);
+    });
+});
+
+input.addEventListener('keyup', function (e) {
+    if (e.key === 'Enter' && selectedIndex !== -1) {
+        const selectedListItem = document.querySelectorAll('#location-dropdown li')[selectedIndex];
+        if (selectedListItem) {
+            const selectedPlace = data.postalCodes[selectedIndex];
+            locationInput.value = selectedPlace.placeName;
+            clearAutocomplete();
+            SelectFromOptions(selectedPlace);
+        }
+    }
+});
+
+
+
+let data2;
+async function getWeatherDetails(lat, lon) {
+    const key = "e3b48c2b7880735a8c105294ce15004a";
+    const api2 = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`;
+    try {
+        const response = await fetch(api2);
+        data2 = await response.json();
+        console.log(data2);
+    } catch (e) {
+        console.log("The error is: " + e);
+    }
+    const humidity = document.getElementById("humidity-value");
+    const visibility = document.getElementById("visibility-value");
+    const airPressure = document.getElementById("airpressure-value");
+    const wind = document.getElementById("wind-value");
+    const temp = document.getElementById("weather-value");
+
+
+    temp.innerHTML = (data2.main.temp_max - 273).toFixed(2);
+    // temp.innerHTML = (data2.main.temp_max - 273).toFixed(2) + "°C";
+    humidity.innerHTML = data2.main.humidity + "%";
+    wind.innerHTML = data2.wind.speed + " mph";
+    visibility.innerHTML = (data2.visibility / 1000) + " km";
+    airPressure.innerHTML = data2.main.pressure + " hPa";
+
+
+    document.getElementById("location-input").value = ""
+}
+
+input.addEventListener('input', function (e) {
+    const place = e.target.value;
+    if (place.trim() !== '') {
+        search(place);
+    } else {
+        clearAutocomplete();
+    }
+});
+
+
+let ampm = document.getElementById('ampm')
+        function displayTime(){
+            let dateTime = new Date();
+            let hr = dateTime.getHours();
+            let min = padZero(dateTime.getMinutes());
+            let sec = padZero(dateTime.getSeconds());
+            if(hr>12){
+                hr = hr - 12
+                ampm.innerHTML = 'PM'
+            }
+            
+            document.getElementById('hours').innerHTML = padZero(hr)
+            document.getElementById('mins').innerHTML = min
+            document.getElementById('seconds').innerHTML = sec
+        }
+
+        function padZero(num){
+            return num<10?"0"+num:num
+        }
+
+        setInterval(displayTime,500);
