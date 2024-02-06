@@ -46,7 +46,7 @@ function SelectFromOptions(postalCode) {
     console.log(postalCode.lat);
     console.log(postalCode.lng);
     getWeatherDetails(postalCode.lat, postalCode.lng)
-    const name = document.getElementById("location");
+    const name = document.getElementsByClassName("location");
     name.innerHTML = postalCode.placeName;
 }
 
@@ -83,7 +83,7 @@ locationInput.addEventListener('keyup', function (e) {
 let data2;
 async function getWeatherDetails(lat, lon) {
     const key = "e3b48c2b7880735a8c105294ce15004a";
-    const api2 = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key};`
+    const api2 = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`
     try {
         const response = await fetch(api2);
         data2 = await response.json();
@@ -91,11 +91,11 @@ async function getWeatherDetails(lat, lon) {
     } catch (e) {
         console.log("The error is: " + e);
     }
-    const humidity = document.getElementById("humidity-value");
-    const visibility = document.getElementById("visibility-value");
-    const airPressure = document.getElementById("airpressure-value");
-    const wind = document.getElementById("wind-value");
-    const temp = document.getElementById("weather-value");
+    const humidity = document.getElementsByClassName("humidity-value");
+    const visibility = document.getElementsByClassName("visibility-value");
+    const airPressure = document.getElementsByClassName("airpressure-value");
+    const wind = document.getElementsByClassName("wind-value");
+    const temp = document.getElementsByClassName("weather-value");
 
 
     temp.innerHTML = (data2.main.temp_max - 273).toFixed(2);
