@@ -47,7 +47,7 @@ function SelectFromOptions(postalCode) {
     console.log(postalCode.lng);
     getWeatherDetails(postalCode.lat, postalCode.lng)
     const name = document.getElementsByClassName("location");
-    name.innerHTML = postalCode.placeName;
+    name.innerHTML = `${postalCode.placeName}`;
 }
 
 let selectedIndex = -1;
