@@ -77,15 +77,15 @@ let reachB = new Promise((resolve, reject) => {
         reject("B not reached")
     }
 })
-let reachC = new Promise((resolve, reject) => {
-    const reached = false
-    if(reached){
-        setTimeout(resolve, 3000, "C Reached Home")
-    }
-    else{
-        reject("C not reached")
-    }
-})
+// let reachC = new Promise((resolve, reject) => {
+//     const reached = false
+//     if(reached){
+//         setTimeout(resolve, 3000, "C Reached Home")
+//     }
+//     else{
+//         reject("C not reached")
+//     }
+// })
 
 // Promise.all([reachA, reachB, reachC])
 // .then((message) => console.log(message))
@@ -95,6 +95,21 @@ let reachC = new Promise((resolve, reject) => {
 // .then((message) => console.log(message))
 // .catch((error) => console.log(error))
 
-Promise.any([reachA, reachB, reachC])
-.then((message) => console.log(message))
-.catch((error) => console.log(error))
+// Promise.any([reachA, reachB, reachC])
+// .then((message) => console.log(message))
+// .catch((error) => console.log(error))
+
+
+async function asyncstatus(){
+    try{
+        console.log("hi")
+        res = await reachA
+        console.log(res)
+        console.log("bye")
+    }
+    catch(err){
+        console.log(err)
+    }
+}
+
+asyncstatus()
