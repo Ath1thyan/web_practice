@@ -319,6 +319,10 @@ body{
   font-size: 1.2rem;
 }
 
+ul{
+  margin-left: -350px;
+  margin-top: 45px;
+}
 
 ul li {
   list-style-type: none;

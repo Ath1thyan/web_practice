@@ -84,6 +84,9 @@ let data2;
 async function getWeatherDetails(lat, lon) {
     const key = "e3b48c2b7880735a8c105294ce15004a";
     const api2 = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`
+
+    const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`;
+    
     try {
         const response = await fetch(api2);
         data2 = await response.json();
