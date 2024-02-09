@@ -35,12 +35,12 @@ function clearAutocomplete() {
 }
 
 function SelectFromOptions(postalCode) {
-  console.log("SelectFromOptions function has been invoked");
+  // console.log("SelectFromOptions function has been invoked");
   const str = JSON.stringify(postalCode);
-  console.log("The single object: " + str);
-  console.log(postalCode.lat);
-  console.log(postalCode.lng);
-  console.log(postalCode.placeName);
+  // console.log("The single object: " + str);
+  // console.log(postalCode.lat);
+  // console.log(postalCode.lng);
+  // console.log(postalCode.placeName);
   getWeatherDetails(postalCode.lat, postalCode.lng);
   const nme = document.getElementById("location");
   nme.innerHTML = `${postalCode.placeName}`;
@@ -83,7 +83,7 @@ async function getWeatherDetails(lat, lon) {
   try {
     const response = await fetch(api2);
     data2 = await response.json();
-    console.log(data2);
+    // console.log(data2);
   } catch (e) {
     console.log("The error is: " + e);
   }
