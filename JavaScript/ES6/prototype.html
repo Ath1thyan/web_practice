@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fun1(name, position){
+            this.name = name;
+            this.position = position;
+            this.print = function (){
+                console.log(`${this.name} ${this.position}`)
+            }
+        }
+        function athi(name, position){
+            this.name = name;
+            this.position = position;
+        }
+        athi.prototype = new fun1();
+        const a1 = new athi('Athi', 'CEO');
+        a1.print();
+    </script>
+</body>
+</html>
