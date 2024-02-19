@@ -72,15 +72,61 @@
         while (i < arr.length){
             console.log(arr[i]);
             i++;
-        }
-        console.log("----------------------------------------------------------------")
-        let j = arr.length -1; 
-        while (j >= 0){
-            console.log(arr[j]);
-            j--;
+            console.log(arr[arr.length-i]);
         }
     }
     rec2()
+
+    console.log("----------------------------------------------------------------")
+
+    let ind = 0;
+    function get(c){
+        if (c == 'f'){
+            function recurse(index) {
+                if(index == arr.length || index >= arr.length) {
+                    return -1;
+                }
+                console.log(arr[index]);
+                recurse(index + 1);
+            }
+            recurse(0);
+        }
+        if (c == 'r'){
+            function recurse(index) {
+                if(index >= arr.length) {
+                    return -1;
+                }
+                console.log(arr[(arr.length-1) - index]);
+                recurse(index + 1);
+            }
+            recurse(0);
+        }
+    }
+    get('f')
+
+    console.log("----------------------------------------------------------------")
+
+
+    function get1(c){
+        function recurse(index) {
+            if (c == 'f'){
+                if(index == arr.length || index >= arr.length) {
+                    return -1;
+                }
+                console.log(arr[index]);
+                recurse(index + 1);
+            }
+            if (c == 'r'){
+                if(index >= arr.length) {
+                    return -1;
+                }
+                console.log(arr[(arr.length-1) - index]);
+                recurse(index + 1);
+            }
+            recurse(0);
+        }
+    }
+    get1('r')
         
     </script>
 </body>
