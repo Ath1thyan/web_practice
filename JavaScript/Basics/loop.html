@@ -105,28 +105,6 @@
     get('f')
 
     console.log("----------------------------------------------------------------")
-
-
-    function get1(c){
-        function recurse(index) {
-            if (c == 'f'){
-                if(index == arr.length || index >= arr.length) {
-                    return -1;
-                }
-                console.log(arr[index]);
-                recurse(index + 1);
-            }
-            if (c == 'r'){
-                if(index >= arr.length) {
-                    return -1;
-                }
-                console.log(arr[(arr.length-1) - index]);
-                recurse(index + 1);
-            }
-            recurse(0);
-        }
-    }
-    get1('r')
         
     </script>
 </body>
